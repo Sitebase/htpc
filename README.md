@@ -25,3 +25,7 @@ user "xbmc" do
   home "/home/xbmc"
   shell "/bin/bash"
 end
+
+
+Go to puppet folder
+>puppet apply --modulepath modules manifests/default.pp
