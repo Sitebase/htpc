@@ -62,5 +62,5 @@ service { "xbmc":
 	status => '/etc/init.d/xbmc status | grep "is running"',
 }
 
-include ssh::server
+#include ssh::server
 include couchpotato
