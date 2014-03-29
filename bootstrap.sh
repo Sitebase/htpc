@@ -30,8 +30,8 @@ else
   git clone https://github.com/Akendo/puppet-transmission.git transmission
 fi
 
-if [[ -d transmission ]]; then
-  cd transmission && git pull && cd ..
+if [[ -d vcsrepo ]]; then
+  cd vcsrepo && git pull && cd ..
 else
   git clone https://github.com/puppetlabs/puppetlabs-vcsrepo.git vcsrepo
 fi
