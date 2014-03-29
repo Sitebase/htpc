@@ -1,7 +1,8 @@
 class motd {
 	
 	file { '/etc/motd':
-    	source => template('motd/motd.erb')
+		ensure  => file,
+    	source => "puppet:///modules/motd/content"
 	}
 
 }
