@@ -22,7 +22,7 @@ exec { 'apt-get update':
 }
 
 file { '/etc/motd':
-    source => "/vagrant/files/motd"
+    source => "puppet:///templates/motd.erb"
 }
 
 #$devPackages = [ 'git-core', 'curl', 'postgresql', 'vim', 'autoconf', 'make', 'htop', 'unzip', 'libjpeg62', 'libfontconfig1', 'libxrender1', 'libxml2-dev']
@@ -45,7 +45,7 @@ package { $devPackages2:
 
 file { "/etc/init.d/xbmc":
     path    => "/etc/init.d/xbmc",
-    source => "/vagrant/files/xbmc.d",
+    source => "puppet:///templates/xbmc.init.erb",
     mode   => "755",
     owner  => root,
     group  => root,
