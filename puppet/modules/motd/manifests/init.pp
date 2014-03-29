@@ -1,8 +1,7 @@
 class motd {
-	
-	file { '/etc/motd':
-		ensure  => file,
-    	source => "puppet:///modules/motd/content"
-	}
-
+  file {
+    "/tmp/hello":
+      ensure => file,
+      source => "puppet:///modules/motd/hello";
+  }
 }
