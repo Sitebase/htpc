@@ -21,9 +21,7 @@ exec { 'apt-get update':
 	command => 'apt-get update',
 }
 
-file { '/etc/motd':
-    source => "puppet:///templates/motd.erb"
-}
+include motd
 
 #$devPackages = [ 'git-core', 'curl', 'postgresql', 'vim', 'autoconf', 'make', 'htop', 'unzip', 'libjpeg62', 'libfontconfig1', 'libxrender1', 'libxml2-dev']
 #nvidia-current
