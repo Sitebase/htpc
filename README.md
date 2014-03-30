@@ -29,3 +29,12 @@ end
 
 Go to puppet folder
 >puppet apply --modulepath modules manifests/default.pp
+
+
+I use a mac mini
+Install refit to dual boot it with Ubuntu then change boot priority to Ubuntu:
+
+Boot with OSX and open /efi/refit/refit.conf
+Last line change #default_selection L to
+default_selection L
+
