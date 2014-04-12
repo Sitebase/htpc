@@ -27,7 +27,8 @@ fi
 if [[ -d transmission ]]; then
   cd transmission && git pull && cd ..
 else
-  git clone https://github.com/Akendo/puppet-transmission.git transmission
+  git clone https://github.com/olbat/puppet-transmission_daemon.git transmission_daemon
+  #git clone https://github.com/Akendo/puppet-transmission.git transmission
 fi
 
 if [[ -d vcsrepo ]]; then
