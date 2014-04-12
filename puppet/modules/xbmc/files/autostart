@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=xbmc -d 5 --standalone -fs
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_En]=xbmc
+Name=xbmc
+Comment[en_En]=
+Comment=
