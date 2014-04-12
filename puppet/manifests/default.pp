@@ -37,5 +37,14 @@ exec { 'apt-get update2':
 
 include xbmc
 
+class {'transmission::daemon':
+	rpc_enabled       => true,
+	bind_address_ipv4 => $::ipaddress_eth0,
+	rpc_bind_address  => $::ipaddress_eth0,
+	rpc_username      => "torrent",
+	rpc_whitelist     => "10.1.1.*",
+	rpc_password      => "{a6d7691be9099dedbd410c8566113e386d6623a69huYVwhh"
+}
+
 #include ssh::server
 include couchpotato 
