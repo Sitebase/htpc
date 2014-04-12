@@ -24,8 +24,8 @@ else
   git clone https://github.com/puppetlabs/puppetlabs-stdlib.git stdlib
 fi
 
-if [[ -d transmission ]]; then
-  cd transmission && git pull && cd ..
+if [[ -d transmission_daemon ]]; then
+  cd transmission_daemon && git pull && cd ..
 else
   git clone https://github.com/olbat/puppet-transmission_daemon.git transmission_daemon
   #git clone https://github.com/Akendo/puppet-transmission.git transmission
